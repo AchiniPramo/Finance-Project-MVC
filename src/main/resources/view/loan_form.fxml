@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.LoanFormController">
+   <children>
+      <Pane fx:id="bodyPane" layoutY="25.0" prefHeight="650.0" prefWidth="870.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <TableView fx:id="tblLoan" layoutX="10.0" layoutY="286.0" prefHeight="350.0" prefWidth="850.0">
+               <columns>
+                  <TableColumn fx:id="colLoanId" prefWidth="170.0" text="Loan Id" />
+                  <TableColumn fx:id="colDescription" prefWidth="170.0" text="Description" />
+                  <TableColumn fx:id="colDuration" prefWidth="170.0" text="Duration" />
+                  <TableColumn fx:id="colAmount" prefWidth="170.0" text="Amount" />
+                  <TableColumn fx:id="colInterestRate" prefWidth="170.0" text="Interest Rate (%)" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btnCustomer" layoutX="697.0" layoutY="14.0" onAction="#btnViewPenaltyOnAction" prefHeight="40.0" prefWidth="150.0" stylesheets="@../style/btnStyle.css" text="View Penalty" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../assests/icon/penalty.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="210.0" fitWidth="113.0" layoutY="42.0">
+               <image>
+                  <Image url="@../assests/icon/border.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="23.0" prefHeight="102.0" prefWidth="163.0" text="Loans" textFill="#4d4c4b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSave" layoutX="726.0" layoutY="217.0" onAction="#btnPlaceLoanFormOnAction" prefHeight="35.0" prefWidth="130.0" stylesheets="@../style/btnStyle.css" text="Place Loan" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@../assests/icon/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="645.0" layoutY="177.0" prefHeight="40.0" prefWidth="163.0" text="Click Here to Place Loan," textFill="#4d4c4b">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

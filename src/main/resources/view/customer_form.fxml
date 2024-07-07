@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.CustomerFormController">
+   <children>
+      <Pane layoutY="25.0" prefHeight="650.0" prefWidth="870.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <ImageView fitHeight="210.0" fitWidth="178.0" layoutY="42.0">
+               <image>
+                  <Image url="@../assests/icon/border.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblCustomer" layoutX="10.0" layoutY="261.0" prefHeight="375.0" prefWidth="850.0">
+               <columns>
+                  <TableColumn fx:id="colCustomerId" prefWidth="172.0" text="Customer Id" />
+                  <TableColumn fx:id="colName" prefWidth="172.0" text="Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="172.0" text="Address" />
+                  <TableColumn fx:id="colEmail" prefWidth="172.0" text="Email Address" />
+                  <TableColumn fx:id="colMobileNo" prefWidth="172.0" text="Mobile No " />
+               </columns>
+            </TableView>
+            <Label layoutX="14.0" layoutY="23.0" prefHeight="102.0" prefWidth="163.0" text="Customers" textFill="#4d4c4b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCustomer" layoutX="669.0" layoutY="22.0" onAction="#btnCustomerManageOnAction" prefHeight="40.0" prefWidth="187.0" stylesheets="@../style/btnStyle.css" text="Manage Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../assests/icon/new customer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

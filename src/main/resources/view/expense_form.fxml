@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.ExpenseFormController">
+   <children>
+      <Pane fx:id="bodyPane" layoutY="25.0" prefHeight="650.0" prefWidth="870.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <TableView fx:id="tblExpenses" layoutX="10.0" layoutY="170.0" prefHeight="375.0" prefWidth="850.0">
+               <columns>
+                  <TableColumn fx:id="colExpenseId" prefWidth="170.0" text="Expense Id" />
+                  <TableColumn fx:id="colType" prefWidth="170.0" text="Type" />
+                  <TableColumn fx:id="colDate" prefWidth="170.0" text="Date" />
+                  <TableColumn fx:id="colEmployeeId" prefWidth="170.0" text="Employee Id" />
+                  <TableColumn fx:id="colAmount" prefWidth="170.0" text="Amount" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btnCustomer" layoutX="661.0" layoutY="22.0" onAction="#btnManageExpenseOnAction" prefHeight="40.0" prefWidth="172.0" stylesheets="@../style/btnStyle.css" text="Manage Expense" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="210.0" fitWidth="306.0" layoutY="42.0">
+               <image>
+                  <Image url="@../assests/icon/border.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="23.0" prefHeight="102.0" prefWidth="283.0" text="Employee Expenses" textFill="#4d4c4b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

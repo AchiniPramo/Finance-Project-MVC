@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.EmployeeFormController">
+   <children>
+      <Pane fx:id="bodyPane" layoutY="25.0" prefHeight="650.0" prefWidth="866.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <ImageView fitHeight="210.0" fitWidth="192.0" layoutY="42.0">
+               <image>
+                  <Image url="@../assests/icon/border.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblEmployee" layoutX="12.0" layoutY="261.0" prefHeight="375.0" prefWidth="846.0">
+               <columns>
+                  <TableColumn fx:id="colEmployeeId" prefWidth="141.0" text="Employee Id" />
+                  <TableColumn fx:id="colName" prefWidth="141.0" text="Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="141.0" text="Address" />
+                  <TableColumn fx:id="colSalary" prefWidth="141.0" text="Salary" />
+                  <TableColumn fx:id="colMobileNo" prefWidth="141.0" text="Mobile No" />
+                  <TableColumn fx:id="colEmail" prefWidth="141.0" text=" Email Address" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btnCustomer" layoutX="701.0" layoutY="20.0" onAction="#btnExpenseOnAction" prefHeight="45.0" prefWidth="155.0" stylesheets="@../style/btnStyle.css" text="Expense" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="14.0" layoutY="23.0" prefHeight="102.0" prefWidth="192.0" text="Employees" textFill="#4d4c4b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCustomer" layoutX="477.0" layoutY="19.0" onAction="#btnEmployeeManageOnAction" prefHeight="47.0" prefWidth="198.0" stylesheets="@../style/btnStyle.css" text="Manage Employee" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../assests/icon/new employee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

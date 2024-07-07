@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.PaymentFormController">
+   <children>
+      <Pane layoutY="24.0" prefHeight="650.0" prefWidth="870.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <TableView fx:id="tblPayment" layoutX="10.0" layoutY="203.0" prefHeight="433.0" prefWidth="850.0">
+               <columns>
+                  <TableColumn fx:id="colPaymentId" prefWidth="212.5" text="Payment Id" />
+                  <TableColumn fx:id="colPaymentDate" prefWidth="212.5" text="Payment Date" />
+                  <TableColumn fx:id="colLoanId" prefWidth="212.5" text="Loan Id" />
+                  <TableColumn fx:id="colAmount" prefWidth="212.5" text="Amount" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="btnCustomer" layoutX="665.0" layoutY="14.0" onAction="#btnManagePaymentOnAction" prefHeight="40.0" prefWidth="185.0" stylesheets="@../style/btnStyle.css" text="Payment Manage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../assests/icon/new payment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="210.0" fitWidth="300.0" layoutY="42.0">
+               <image>
+                  <Image url="@../assests/icon/border.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="23.0" prefHeight="102.0" prefWidth="273.0" text="Payments Of Loans" textFill="#4d4c4b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

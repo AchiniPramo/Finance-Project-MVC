@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.MainBoardFormController">
+   <children>
+      <Pane layoutY="25.0" prefHeight="650.0" prefWidth="870.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <Pane layoutX="14.0" layoutY="132.0" prefHeight="100.0" prefWidth="225.0" style="-fx-background-color: #F6F3D9;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Total Loans">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLoanCount" layoutX="155.0" layoutY="33.0" text="15" textFill="#030000">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="250.0" prefHeight="100.0" prefWidth="225.0" style="-fx-background-color: #F6F3D9;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Total Employees">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmployeeCount" layoutX="155.0" layoutY="33.0" text="15" textFill="#030000">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="225.0" style="-fx-background-color: #F6F3D9;">
+               <children>
+                  <Label layoutX="14.0" layoutY="8.0" text="Total Customers">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCustomerCount" layoutX="155.0" layoutY="33.0" text="15" textFill="#030000">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <BarChart fx:id="barChart" layoutX="331.0" layoutY="293.0" prefHeight="375.0" prefWidth="525.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Label layoutX="14.0" layoutY="556.0" text="Hi, Welcome !">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="599.0" text="Hiithamithuru Micro Finance" textFill="#838310">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="523.0" layoutY="250.0" text="Average Of Loans">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="593.0" layoutY="277.0" startX="-100.0" />
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="686.0" layoutY="-36.0">
+               <image>
+                  <Image url="@../assests/icon/White Minimalist Business Finance Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

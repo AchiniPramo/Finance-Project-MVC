@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1200.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.LoginFormController">
+   <children>
+      <Pane layoutX="50.0" layoutY="50.0" prefHeight="600.0" prefWidth="1100.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <ImageView fitHeight="592.0" fitWidth="1092.0" layoutX="4.0" layoutY="4.0">
+               <image>
+                  <Image url="@../assests/icon/loginNew.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" layoutX="753.0" layoutY="238.0" prefHeight="34.0" prefWidth="225.0" promptText="Enter your username" stylesheets="@../style/textFieldStyle.css" />
+            <Label layoutX="701.0" layoutY="144.0" text="Please enter details to login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="727.0" layoutY="425.0" text="Do you want to reset password?" textFill="#686767">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="648.0" layoutY="245.0" text="Username -:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="650.0" layoutY="308.0" text="Password -:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="34.0" text="Hithamithuru Micro Finance">
+               <font>
+                  <Font name="Cambria Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLogin" layoutX="801.0" layoutY="368.0" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="125.0" stylesheets="@../style/btnStyle.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="txtPassword" layoutX="753.0" layoutY="301.0" prefHeight="34.0" prefWidth="225.0" promptText="Enter your password" stylesheets="@../style/textFieldStyle.css" />
+            <Label layoutX="666.0" layoutY="93.0" text="Hi! Welcome Back!">
+               <font>
+                  <Font name="Cambria Bold" size="36.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="926.0" layoutY="422.0" onAction="#linkResetOnAction" text="Reset Here">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

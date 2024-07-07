@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="body" stylesheets="@../style/pageStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.PenaltyFormController">
+   <children>
+      <Pane fx:id="bodyPane" prefHeight="650.0" prefWidth="870.0" styleClass="pane" stylesheets="@../style/pageStyle.css">
+         <children>
+            <ImageView fitHeight="210.0" fitWidth="178.0" layoutY="49.0">
+               <image>
+                  <Image url="@../assests/icon/border.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblPenalty" layoutX="10.0" layoutY="170.0" prefHeight="377.0" prefWidth="851.0">
+               <columns>
+                  <TableColumn fx:id="colPenaltyId" prefWidth="172.0" text="Penalty_Id" />
+                  <TableColumn fx:id="colReason" prefWidth="172.0" text="Reason" />
+                  <TableColumn fx:id="colLoanId" prefWidth="172.0" text="Loan Id" />
+                  <TableColumn fx:id="colAmount" prefWidth="172.0" text="Amount" />
+                  <TableColumn fx:id="colDateApplied" prefWidth="172.0" text="Date Applied" />
+               </columns>
+            </TableView>
+            <Label layoutY="31.0" prefHeight="102.0" prefWidth="163.0" text="Penalty" textFill="#4d4c4b">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

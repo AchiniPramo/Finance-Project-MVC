@@ -1,0 +1,219 @@
+#btnLogin {
+    -fx-background-color:  #807432;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 6px;
+}
+
+#btnLogin:hover {
+    -fx-background-color: #645B27; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 6px;
+}
+
+#btnReset {
+    -fx-background-color:  #807432;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 6px;
+}
+
+#btnReset:hover {
+    -fx-background-color: #645B27; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 6px;
+}
+
+#btnDashboard {
+    -fx-background-color:  #807432;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+#btnDashboard:hover {
+    -fx-background-color: #645B27; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px
+}
+
+#btnIcon {
+    -fx-background-color: #fbc531;
+    -fx-border-color: #2d3436;
+}
+
+#btnIcon:hover {
+    -fx-background-color: #f0a500;
+    -fx-border-color: white;
+}
+
+#btnRefresh {
+    -fx-background-color: #2ed573;
+    -fx-border-color: #2d3436;
+}
+
+#btnRefresh:hover {
+    -fx-background-color: #28b463;
+    -fx-border-color: white;
+}
+
+#btnBack {
+    -fx-background-color: #636e72;
+    -fx-border-color: #636e72;
+}
+
+#btnBack:hover {
+    -fx-background-color: #b2bec3;
+    -fx-border-color: white;
+}
+
+#btnSave{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #00ff9f;
+    -fx-text-fill: #ffffff;
+}
+#btnSave:hover{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #007a4b;
+    -fx-text-fill: #ffffff;
+}
+
+#btnUpdate{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #e1a566;
+    -fx-text-fill: #ffffff;
+}
+
+#btnUpdate:hover{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #de6e00;
+    -fx-text-fill: #ffffff;
+}
+
+#btnDelete{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #ff6556;
+    -fx-text-fill: #ffffff;
+}
+
+#btnDelete:hover{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #bd1904;
+    -fx-text-fill: #ffffff;
+}
+
+#btnClear{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #a69ea4;
+    -fx-text-fill: #ffffff;
+}
+
+#btnClear:hover{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #525252;
+    -fx-text-fill: #ffffff;
+}
+
+#btnSearch{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #3498db;
+    -fx-text-fill: #ffffff;
+}
+
+#btnSearch:hover {
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #2980b9;
+    -fx-text-fill: #ffffff;
+}
+
+#btnHome {
+    -fx-border-color: #2d3436;
+    -fx-shape: "M 10 0 Q 0 0 0 10 V 40 Q 0 50 10 50 H 50 Q 60 50 60 40 V 10 Q 60 0 50 0 H 10 Z";
+}
+
+#btnHome:hover {
+    -fx-background-color: #2ed573;
+    -fx-border-color: white;
+}
+
+#btnEmployee {
+    -fx-background-color:  #8F8016;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 5px;
+}
+
+#btnEmployee:hover {
+    -fx-background-color: #302B0F; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+}
+
+#btnCustomer {
+    -fx-background-color:  #807432;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+#btnCustomer:hover {
+    -fx-background-color: #645B27; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px
+}
+
+#btnCollateral {
+    -fx-background-color:  #8F8016;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 5px;
+}
+
+#btnCollateral:hover {
+    -fx-background-color: #302B0F; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+}
+
+#btnLoan {
+    -fx-background-color:  #8F8016;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 5px;
+}
+
+#btnLoan:hover {
+    -fx-background-color: #302B0F; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+}
+#btnPayment {
+    -fx-background-color:  #8F8016;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 5px;
+}
+
+#btnPayment:hover {
+    -fx-background-color: #302B0F; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+}
+
+#btnExpense {
+    -fx-background-color:  #8F8016;
+    -fx-border-color: black;/* Button background color */
+    -fx-border-radius: 5px;
+}
+
+#btnExpense:hover {
+    -fx-background-color: #302B0F; /* Button background color on hover */
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+}

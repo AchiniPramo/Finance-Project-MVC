@@ -1,0 +1,9 @@
+.body{
+    -fx-background-color:  #C8C093;  /*linear-gradient(to left top,rgba(96,97,101,1) , #f1f1f2);    */
+}
+.pane {
+    -fx-background-color: #fff;
+    -fx-border-radius: 40px 40px 40px 40px; /* Individual radius for each corner */
+    -fx-background-radius: 40px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 9, 5, 6);
+}

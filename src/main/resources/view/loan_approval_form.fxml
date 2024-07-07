@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.LoanApprovalFormController">
+   <children>
+      <ImageView fitHeight="194.0" fitWidth="270.0" layoutY="11.0">
+         <image>
+            <Image url="@../assests/icon/border.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="-9.0" prefHeight="102.0" prefWidth="298.0" text="Loan Approval Form" textFill="#4d4c4b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="80.0" text="Customer Details" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="310.0" text="Collateral Details" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="506.0" text="Loan Details" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="110.0" text="Customer Id" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="110.0" text="Name" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerName" layoutX="345.0" layoutY="130.0" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <Label layoutX="32.0" layoutY="240.0" text="Contact Number" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerAddress" layoutX="33.0" layoutY="195.0" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <TextField fx:id="txtCustomerContact" layoutX="32.0" layoutY="260.0" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <TextField fx:id="txtEmail" layoutX="345.0" layoutY="195.0" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <Label layoutX="32.0" layoutY="175.0" text="Address" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="175.0" text="Email" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="32.0" layoutY="130.0" onAction="#txtCustomerIdOnAction" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <Label layoutX="29.0" layoutY="340.0" text="Collateral Id" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="340.0" text="Name" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCollateralName" layoutX="346.0" layoutY="360.0" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <TextField fx:id="txtCollateralAddress" layoutX="29.0" layoutY="425.0" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <TextField fx:id="txtCollateralContact" layoutX="345.0" layoutY="425.0" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <Label layoutX="29.0" layoutY="405.0" text="Address" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="405.0" text="Contact Number" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCollateralId" layoutX="29.0" layoutY="360.0" onAction="#txtCollateralIdOnAction" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <Label layoutX="29.0" layoutY="534.0" text="Description" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="534.0" text="Duration" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDuration" layoutX="345.0" layoutY="554.0" onKeyReleased="#txtDurationOnKeyReleased" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <TextField fx:id="txtAmount" layoutX="29.0" layoutY="619.0" onKeyReleased="#txtAmountOnKeyReleased" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <TextField fx:id="txtRate" layoutX="345.0" layoutY="619.0" onKeyReleased="#txtInterestRateOnKeyReleased" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <Label layoutX="29.0" layoutY="599.0" text="Amount" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="599.0" text="Interest Rate (%)" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescription" layoutX="29.0" layoutY="554.0" onKeyReleased="#txtDescriptionOnKeyReleased" prefHeight="34.0" prefWidth="226.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <JFXButton fx:id="btnSave" layoutX="447.0" layoutY="660.0" onAction="#btnPlaceLoanOnAction" prefHeight="30.0" prefWidth="125.0" stylesheets="@../style/btnStyle.css" text="Approve" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@../assests/icon/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Line endX="293.0" layoutX="292.0" layoutY="310.0" startX="-280.6000061035156" />
+      <Line endX="293.0" layoutX="293.0" layoutY="506.0" startX="-280.6000061035156" />
+      <JFXButton fx:id="btnDelete" layoutX="496.0" layoutY="271.0" onAction="#btnCustomerAddOnAction" prefHeight="30.0" prefWidth="75.0" stylesheets="@../style/btnStyle.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="409.0" layoutY="271.0" onAction="#btnCustomerUpdateOnAction" prefHeight="30.0" prefWidth="75.0" stylesheets="@../style/btnStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="496.0" layoutY="469.0" onAction="#btnCollateralAddOnAction" prefHeight="30.0" prefWidth="75.0" stylesheets="@../style/btnStyle.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="410.0" layoutY="469.0" onAction="#btnCollateralUpdateOnAction" prefHeight="30.0" prefWidth="75.0" stylesheets="@../style/btnStyle.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Micro_Finance_Management_System.controller.PaymentManageFormController">
+   <children>
+      <ImageView fitHeight="145.0" fitWidth="234.0" layoutY="8.0">
+         <image>
+            <Image url="@../assests/icon/border.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="60.0" text="Payment Id" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="128.0" text="Payment Date" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="195.0" text="Loan Id" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="262.0" text="Amount" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAmount" layoutX="84.0" layoutY="282.0" onKeyReleased="#txtAmountOnKeyReleased" prefHeight="34.0" prefWidth="275.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <ComboBox fx:id="cmbPaymentId" layoutX="45.0" layoutY="80.0" prefHeight="30.0" prefWidth="207.0" promptText="You Can Search Payment Here" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <ComboBox fx:id="cmbLoanId" layoutX="84.0" layoutY="212.0" prefHeight="34.0" prefWidth="275.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <DatePicker fx:id="dtpPayment" layoutX="84.0" layoutY="148.0" onKeyReleased="#dtpPaymentDateOnKeyReleased" prefHeight="34.0" prefWidth="275.0" styleClass="textField" stylesheets="@../style/textFieldStyle.css" />
+      <JFXButton fx:id="btnSave" layoutX="148.0" layoutY="330.0" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="100.0" stylesheets="@../style/btnStyle.css" text="Pay" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@../assests/icon/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="274.0" layoutY="330.0" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="80.0" stylesheets="@../style/btnStyle.css" text="Clear" textFill="#0b0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="18.0">
+               <image>
+                  <Image url="@../assests/icon/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="14.0" prefWidth="233.0" text="Payment Manage">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSearch" layoutX="262.0" layoutY="78.0" onAction="#btnSearchOnAction" prefHeight="34.0" prefWidth="80.0" stylesheets="@../style/btnStyle.css" text="Search">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0">
+               <image>
+                  <Image url="@../assests/icon/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Line endX="244.60003662109375" endY="1.52587890625E-5" layoutX="115.0" layoutY="120.0" startX="-100.0" />
+      <JFXButton fx:id="btnClear" layoutX="31.0" layoutY="330.0" onAction="#btnPrintBillOnAction" prefHeight="35.0" prefWidth="100.0" stylesheets="@../style/btnStyle.css" text="Print Bill" textFill="#0b0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
